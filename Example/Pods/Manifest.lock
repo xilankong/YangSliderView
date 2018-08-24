@@ -1,16 +1,23 @@
 PODS:
-  - YangSliderView (0.1.0)
+  - SnapKit (4.0.0)
+  - YangSliderView (1.0.0)
 
 DEPENDENCIES:
+  - SnapKit
   - YangSliderView (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SnapKit
 
 EXTERNAL SOURCES:
   YangSliderView:
     :path: "../"
 
 SPEC CHECKSUMS:
-  YangSliderView: 220c114fd31d125c4ad97fd917f8dbf8e467b1d8
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  YangSliderView: e1b13fb7d989d8db63530f0911ea27b4fd273a77
 
-PODFILE CHECKSUM: 0a54c21aa06c9a86211c1e68f082ba06b383d921
+PODFILE CHECKSUM: cd8b4042aa9e64c84d02858bc565d4515f7cebf4
 
 COCOAPODS: 1.5.0

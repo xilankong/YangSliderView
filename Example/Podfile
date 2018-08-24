@@ -2,7 +2,7 @@ use_frameworks!
 
 target 'YangSliderView_Example' do
   pod 'YangSliderView', :path => '../'
-
+  pod 'SnapKit'
   target 'YangSliderView_Tests' do
     inherit! :search_paths
 
