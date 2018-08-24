@@ -1,0 +1,6 @@
+framework module YangSliderView {
+  umbrella header "YangSliderView-umbrella.h"
+
+  export *
+  module * { export * }
+}

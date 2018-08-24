@@ -1,0 +1,16 @@
+PODS:
+  - YangSliderView (0.1.0)
+
+DEPENDENCIES:
+  - YangSliderView (from `../`)
+
+EXTERNAL SOURCES:
+  YangSliderView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YangSliderView: 220c114fd31d125c4ad97fd917f8dbf8e467b1d8
+
+PODFILE CHECKSUM: 0a54c21aa06c9a86211c1e68f082ba06b383d921
+
+COCOAPODS: 1.5.0
