@@ -14,9 +14,11 @@ class ViewController: UIViewController {
     
     var vcs = [UIViewController & YangSliderViewContainerDelegate]()
     var titles = [String]()
-    let slideMenu = YangSliderView()
+    let slideMenu = YangSliderView(frame: CGRect.zero, indicatorType: .stretch, titles: [], childControllers: [])
     override func viewDidLoad() {
         super.viewDidLoad()
+        slideMenu.tabBarWidth = 230.0
+        slideMenu.indicatorWidth = 73.0
         view.backgroundColor = UIColor.white
         
         let vc1 = YangSliderViewContainerViewController()
@@ -29,16 +31,16 @@ class ViewController: UIViewController {
         vc4.view.backgroundColor = UIColor.purple
         let vc5 = YangSliderViewContainerViewController()
         vc5.view.backgroundColor = UIColor.gray
-        vcs = [vc1, vc2, vc3, vc4, vc5]
+        vcs = [vc1, vc2]
         
-        titles = ["tab-1", "tab-2", "tab-3", "tab-4", "tab-5"]
+        titles = ["tab-1", "tab-2"]
         
         slideMenu.reloadView(titles: titles, controllers: vcs)
         view.addSubview(slideMenu)
         automaticallyAdjustsScrollViewInsets = false
         slideMenu.snp.makeConstraints {
             $0.left.right.bottom.equalTo(self.view)
-            $0.top.equalTo(self.view).offset(64)
+            $0.top.equalTo(self.view).offset(120)
         }
  
     }
